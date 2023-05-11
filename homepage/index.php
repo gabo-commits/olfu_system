@@ -10,34 +10,37 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body>
-    <?php
-    include 'indexHeader.php'
-    ?>
-    <section class="section">
-        <div class="sub-section">
-            <div class="logo-center">
-                <img src="../img/university-seal2.png" class="image_logo10" alt="">
+    <div class="header-main">
+        <?php
+        include 'indexHeader.php'
+        ?>
+        <section class="section">
+            <div class="sub-section">
+                <div class="logo-center">
+                    <img src="../img/university-seal2.png" class="image_logo10" alt="">
+                </div>
+                <div class="olfu-name">
+                    <h2>OUR LADY OF FATIMA <span>UNIVERSITY</span></h2>
+                </div>
+                <div class="button-apply">
+                    <button class="btn btn-center"><a href="admissionform.php">APPLY NOW</a></button>
+                </div>
+                
             </div>
-            <div class="olfu-name">
-                <h2>OUR LADY OF FATIMA <span>UNIVERSITY</span></h2>
-            </div>
-            <div class="button-apply">
-                <button class="btn btn-center"><a href="admissionform.php">APPLY NOW</a></button>
+        </section>
+        <!-- <section class="section-2">
+            <div class="t-nav-link">
+                <ul class="t-nav-ul">
+                    <li><a href="portal.php">OLFU PORTAL</a></li>
+                    <li><a href="admission form.html">APPLY ONLINE</a></li>
+                    <li><a href="#">ENROLL ONLINE</a></li>
+                    <li><a href="#">CANVAS</a></li>
+                </ul>
             </div>
             
-        </div>
-    </section>
-    <!-- <section class="section-2">
-        <div class="t-nav-link">
-            <ul class="t-nav-ul">
-                <li><a href="portal.php">OLFU PORTAL</a></li>
-                <li><a href="admission form.html">APPLY ONLINE</a></li>
-                <li><a href="#">ENROLL ONLINE</a></li>
-                <li><a href="#">CANVAS</a></li>
-            </ul>
-        </div>
-        
-    </section> -->
+        </section> -->
+    </div>
+    
     <!-- <section class="section-3">
 
         <h1 class="campus-heading"><span>Our Lady of Fatima University </span>Virtual Campus Tour</h1>
@@ -51,8 +54,8 @@
             <br>
             <a href="#" class="btn btn-center">Learn more</a>
             </div>
-        </div> -->
-        <!-- <div class="sub-section-3">
+        </div>
+        <div class="sub-section-3">
             <iframe width="560" height="315" class="olfu-vid" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="sub-section-3">
@@ -60,8 +63,8 @@
             <br>
             
 
-        </div> -->
-    </section>
+        </div>
+    </section> -->
     <?php
     include 'indexFooter.php'
     ?>
