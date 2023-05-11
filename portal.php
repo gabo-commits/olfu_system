@@ -17,7 +17,7 @@
                 
                 <div class="olfu-logo">
                     <div class="sub-logo">
-                        <a href="index.php"><img src="img/logo.png" class="olfu-logo-image"  alt=""></a>
+                        <a href="./homepage/index.php"><img src="img/logo.png" class="olfu-logo-image"  alt=""></a>
                     </div>
                     <div class="sub-logo">
                         <p class="p-qc">ACADEMIC INFORMATION MANAGMENT SYSTEM |<img src="img/lock.svg" class="nav-lock"  alt="">
