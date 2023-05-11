@@ -9,7 +9,7 @@
             
             <div class="nav-links">
                 <ul>
-                    <li><a href="portal.php">OLFU PORTAL</a></li>
+                    <li><a href="../portal.php">OLFU PORTAL</a></li>
                     <li><a href="#">OUR PROGRAM</a></li>
                     <li><a href="admissionform.php">APPLY NOW</a></li>
                     <li><a href="#">CONTACT US</a></li>
