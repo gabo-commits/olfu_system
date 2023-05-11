@@ -813,6 +813,7 @@ header
     color: #fff;
     font-size: 13px;
     font-weight: normal;
+    text-align: justify;
     margin: 0;
 }
 
@@ -865,7 +866,7 @@ header
 
 @media (max-width: 1120px)
 {
-    .nav-links
+    /* .nav-links
     {
         position: absolute;
         top: 0;
@@ -895,7 +896,7 @@ header
     .s-nav-links ul li
     {
         display: block;
-    }
+    } */
 
     .footer-distributed {
         display: grid;
@@ -925,6 +926,24 @@ header
     .footer-right .footer-company-about
     {
         width: 25rem;
+        
+    }
+
+    .footer-right .footer-company-about span
+    {
+        text-align: center;
+    }
+
+    header
+    {
+        position: relative;
+    }
+
+    .s-nav
+    {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
 }
