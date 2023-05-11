@@ -676,6 +676,24 @@ header
     font-weight: bolder;
 }
 
+.mobile
+{
+    display: flex;
+}
+
+.nav-links ul li:nth-child(5),
+.nav-links ul li:nth-child(6),
+.nav-links ul li:nth-child(7),
+.nav-links ul li:nth-child(8),
+.nav-links ul li:nth-child(9),
+.nav-links ul li:nth-child(10),
+.nav-links ul li:nth-child(11)
+{
+    display: none;
+    
+    
+}
+
 
 /* end of index.html */
 @media(max-width: 1148px)
@@ -864,6 +882,8 @@ header
     }
 }    */
 
+
+
 @media (max-width: 1120px)
 {
     /* .nav-links
@@ -877,19 +897,9 @@ header
     }
 
 
-    .nav-links ul li
-    {
-        display: block;
-    }
+    
 
-    .s-nav-links
-    {
-        position: absolute;
-        right: 0;
-        background: hsl(0 0% 100% /0.1);
-        backdrop-filter: blur(1rem);
-        z-index: 3;
-    }
+   
 
 
 
@@ -934,7 +944,64 @@ header
         text-align: center;
     }
 
-    header
+    .mobile
+    {
+        position: fixed;
+        inset: 0 0 0 75%;
+        flex-direction: column-reverse;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0 0% 100% /0.5);
+        backdrop-filter: blur(1rem);
+        
+    }
+
+    .nav-links ul 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+    }
+
+    #navbar
+    {
+        visibility: hidden;
+    }
+
+    .nav-links
+    {   
+        display: flex;
+        justify-content: start;
+    }
+
+    .s-nav-links
+    {
+        visibility: hidden;
+    }
+
+    .search-btn
+    {
+        display: flex;
+        justify-content: start;
+    }
+
+    .nav-links ul li:nth-child(5),
+    .nav-links ul li:nth-child(6),
+    .nav-links ul li:nth-child(7),
+    .nav-links ul li:nth-child(8),
+    .nav-links ul li:nth-child(9),
+    .nav-links ul li:nth-child(10),
+    .nav-links ul li:nth-child(11)
+    {
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+        
+    }
+
+    /* header
     {
         position: relative;
     }
@@ -944,6 +1011,46 @@ header
         position: absolute;
         bottom: 0;
         right: 0;
-    }
+    } */
 
+}
+
+@media (max-width: 900px)
+{
+    
+    .mobile
+    {
+        inset: 0 0 0 70%;
+        
+    }
+}
+
+@media (max-width: 770px)
+{
+    
+    .mobile
+    {
+        inset: 0 0 0 65%;
+        
+    }
+}
+
+@media (max-width: 640px)
+{
+    
+    .mobile
+    {
+        inset: 0 0 0 60%;
+        
+    }
+}
+
+@media (max-width: 550px)
+{
+    
+    .mobile
+    {
+        inset: 0 0 0 50%;
+        
+    }
 }
