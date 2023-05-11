@@ -1,7 +1,7 @@
 <footer class="footer-distributed">
 
 <div class="footer-left">
-    <img src="./img/olfulogo4.png" alt="">
+    <img src="../img/olfulogo4.png" alt="">
 
     <p class="footer-company-name">Copyright © 2023 <strong>Our Lady of Fatima University</strong> All rights reserved</p>
 </div>

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Lady Of Fatima University Quezon City</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/universitylogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/universitylogo.png" type="image/x-icon">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <section class="section">
         <div class="sub-section">
             <div class="logo-center">
-                <img src="img/university-seal2.png" class="image_logo10" alt="">
+                <img src="../img/university-seal2.png" class="image_logo10" alt="">
             </div>
             <div class="olfu-name">
                 <h2>OUR LADY OF FATIMA <span>UNIVERSITY</span></h2>

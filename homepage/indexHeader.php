@@ -3,7 +3,7 @@
             <!-- 1st navbar -->
         <nav class="f-nav">
             <div class="olfu-logo">
-                <a href="index.php"><img src="img/logo.png" class="olfu-logo-image"  alt=""></a>
+                <a href="index.php"><img src="../img/logo.png" class="olfu-logo-image"  alt=""></a>
                 <p class="p-qc">QUEZON CITY</p>
             </div>
             
