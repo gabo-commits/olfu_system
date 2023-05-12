@@ -687,7 +687,8 @@ header
 .nav-links ul li:nth-child(8),
 .nav-links ul li:nth-child(9),
 .nav-links ul li:nth-child(10),
-.nav-links ul li:nth-child(11)
+.nav-links ul li:nth-child(11),
+.sr-only
 {
     display: none;
     
@@ -895,7 +896,7 @@ header
         backdrop-filter: blur(1rem);
         z-index: 3;
     }
-
+    
 
     
 
@@ -907,6 +908,22 @@ header
     {
         display: block;
     } */
+    #navbar
+    {
+        display: none;
+    }
+
+    .mobile-nav-toggle
+    {
+        position: absolute;
+        z-index: 9999;
+        background: url('../img/hamburger-menu-svgrepo-com.svg');
+        background-repeat: no-repeat;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
 
     .footer-distributed {
         display: grid;
@@ -947,6 +964,7 @@ header
     .mobile
     {
         position: fixed;
+        z-index: 1000;
         inset: 0 0 0 75%;
         flex-direction: column-reverse;
         padding: min(30vh, 10rem) 2em;
@@ -963,10 +981,6 @@ header
         
     }
 
-    #navbar
-    {
-        visibility: hidden;
-    }
 
     .nav-links
     {   
@@ -976,7 +990,7 @@ header
 
     .s-nav-links
     {
-        visibility: hidden;
+        display: none;
     }
 
     .search-btn
@@ -1000,6 +1014,11 @@ header
         
         
     }
+
+    /* .sr-only
+    {
+        display: contents;
+    } */
 
     /* header
     {
