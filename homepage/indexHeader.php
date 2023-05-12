@@ -6,14 +6,19 @@
                 <a href="index.php"><img src="../img/logo.png" class="olfu-logo-image"  alt=""></a>
                 <p class="p-qc">QUEZON CITY</p>
             </div>
+
+            <button class="mobile-nav-toggle" 
+            aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            </button>
             <div class="mobile">
-                <div class="nav-links">
-                    <ul>
+                <div class="nav-links primary-navigation" id="primary-navigation" data-visbile="false">
+                    <ul > 
                         <li><a href="../portal.php">OLFU PORTAL</a></li>
                         <li><a href="#">OUR PROGRAM</a></li>
                         <li><a href="admissionform.php">APPLY NOW</a></li>
                         <li><a href="#">CONTACT US</a></li>
-                        <li><a href="index.php">HOME</a></li>
+                        <li class="active"><a href="index.php">HOME</a></li>
                         <li>
                             <a href="#">ABOUT</a>
                             <ul class="admission-sub-menu">
