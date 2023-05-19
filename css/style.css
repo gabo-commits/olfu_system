@@ -10,6 +10,7 @@
 body
 {
     display: grid;
+    overflow: hidden;
     
 }
 header
@@ -687,13 +688,19 @@ header
 .nav-links ul li:nth-child(8),
 .nav-links ul li:nth-child(9),
 .nav-links ul li:nth-child(10),
-.nav-links ul li:nth-child(11),
-.sr-only
+.nav-links ul li:nth-child(11)
 {
     display: none;
     
     
 }
+
+.mobile-nav-toggle
+{
+    display: none;
+}
+
+
 
 
 /* end of index.html */
@@ -898,12 +905,6 @@ header
     }
     
 
-    
-
-   
-
-
-
     .s-nav-links ul li
     {
         display: block;
@@ -913,16 +914,51 @@ header
         display: none;
     }
 
+    .sr-only {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important;
+      }
+
+    .mobile
+    {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 75%;
+        flex-direction: column-reverse;
+        padding: min(30vh, 10rem) 2em;
+        background: hsl(0 0% 100% /0.5);
+        backdrop-filter: blur(1rem);
+        transform: translateX(100%);
+        
+    }
+
     .mobile-nav-toggle
     {
+        display: block;
         position: absolute;
         z-index: 9999;
         background: url('../img/hamburger-menu-svgrepo-com.svg');
         background-repeat: no-repeat;
+        display: contents;
+        border: none;
         width: 2rem;
         aspect-ratio: 1;
         top: 2rem;
         right: 2rem;
+    }
+
+    .primary-navigation[data-visible="true"]
+    {
+        transform: translateX(0%);
     }
 
     .footer-distributed {
@@ -961,17 +997,7 @@ header
         text-align: center;
     }
 
-    .mobile
-    {
-        position: fixed;
-        z-index: 1000;
-        inset: 0 0 0 75%;
-        flex-direction: column-reverse;
-        padding: min(30vh, 10rem) 2em;
-        background: hsl(0 0% 100% /0.5);
-        backdrop-filter: blur(1rem);
-        
-    }
+    
 
     .nav-links ul 
     {
